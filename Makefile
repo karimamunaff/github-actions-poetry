@@ -1,4 +1,4 @@
-POETRY_VERSION = 1.1.3
+POETRY_VERSION = 1.4.0
 
 .make/install-poetry:
 	@pipx install poetry==$(POETRY_VERSION) --force
