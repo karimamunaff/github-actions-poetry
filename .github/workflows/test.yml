@@ -5,19 +5,13 @@ jobs:
     test:
         runs-on: ubuntu-latest
         steps:
-            - name: Checkout repo
+            - name: Checkout Repo
               uses: actions/checkout@v3
-              
-            - name: Setup cmake
-              uses: jwlawson/actions-setup-cmake@v1.14.0
 
             - name: Setup Python
               uses: actions/setup-python@v4
               with:
                 python-version: '3.9'
-
-            - name: Setup Poetry
-              uses: abatilo/actions-poetry@v2.1.6
             
             - name: Setup Project
               run: make setup-project
